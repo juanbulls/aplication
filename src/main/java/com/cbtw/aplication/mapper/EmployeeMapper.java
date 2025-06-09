@@ -16,12 +16,12 @@ public class EmployeeMapper {
     }
 
     // to employee en el sentido contrario, para enregar a la base de datos
-    public static Employee mapToEmployee(Employee employee) {
+    public static Employee mapToEmployee(EmployeeDto employeeDto) {
         return new Employee(
-                employee.getId(),
-                employee.getFirstName(),
-                employee.getLastName(),
-                employee.getEmail()
+                employeeDto.getId(),
+                employeeDto.getFirstName(),
+                employeeDto.getLastName(),
+                employeeDto.getEmail()
         );
     }
 }
